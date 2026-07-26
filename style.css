@@ -8,12 +8,12 @@
   --night:   #0B0F1A;   /* page background — night sky        */
   --night-2: #0E1422;   /* deep panel                          */
   --panel:   #141B2B;   /* raised surface                      */
-  --line:    rgba(198,161,91,.22);   /* brass hairline         */
-  --line-2:  rgba(147,160,180,.16);  /* slate hairline         */
-  --brass:   #C6A15B;   /* primary accent                      */
-  --brass-2: #E6CD92;   /* accent light / hover                */
+  --line:    rgba(212,178,116,.30);   /* brass hairline         */
+  --line-2:  rgba(180,191,208,.22);  /* slate hairline         */
+  --brass:   #D4B274;   /* primary accent                      */
+  --brass-2: #F0DBA8;   /* accent light / hover                */
   --ivory:   #F1ECE1;   /* primary text                        */
-  --slate:   #93A0B4;   /* secondary text                      */
+  --slate:   #B4BFD0;   /* secondary text                      */
   --moon:    #D7DEE9;   /* moonlight silver                    */
   --radius:  14px;
   --disp: 'Cormorant Garamond', Georgia, serif;
@@ -270,7 +270,8 @@ p{ margin:0 0 1em; }
   .nav{
     display:none; position:absolute; top:66px; left:0; right:0;
     flex-direction:column; align-items:stretch; gap:0;
-    background:rgba(11,15,26,.98); border-bottom:1px solid var(--line);
+    background:var(--night); border-bottom:1px solid var(--line);
+    box-shadow:0 18px 40px rgba(0,0,0,.6); z-index:60;
     padding:10px 22px 22px;
   }
   .nav.open{ display:flex; }
@@ -364,5 +365,5 @@ p{ margin:0 0 1em; }
 /* ---------- Credential line ---------- */
 .cred{
   font:500 .82rem/1.5 var(--body); letter-spacing:.08em;
-  color:var(--slate); margin:-16px 0 26px; opacity:.85;
+  color:var(--moon); margin:-16px 0 26px;
 }
