@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0B0F1A">
-  <title>Refund Policy — Chand Khan Niazi</title>
-  <meta name="description" content="Refund policy for coaching services — applicable only in exceptional circumstances, verified through the authorized family representative.">
+  <title>Weekly Log — Chand Khan Niazi</title>
+  <meta name="description" content="Weekly body-composition log — weight, body fat and lean mass recorded every Wednesday since June 2025.">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="apple-touch-icon" href="logo-icon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,10 +22,10 @@
     <nav class="nav" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="journey.html">The Journey</a>
-      <a href="log.html">My Weekly Log</a>
+      <a href="log.html" aria-current="page">My Weekly Log</a>
       <a href="programs-male.html">Male Programs</a>
       <a href="programs-female.html">Female Programs</a>
-      <a href="refund-policy.html" aria-current="page">Refund Policy</a>
+      <a href="refund-policy.html">Refund Policy</a>
       <a href="enroll.html" class="btn btn-solid">Enroll</a>
     </nav>
   </div>
@@ -33,34 +33,45 @@
 
 <main>
 
+<!-- ============ PAGE HEAD ============ -->
 <section class="pagehead">
   <div class="wrap">
-    <p class="eyebrow">Policy</p>
-    <h1>Refund Policy</h1>
-    <p class="lede">Exceptional circumstances only.</p>
+    <p class="eyebrow">The Record</p>
+    <h1>My Weekly Log</h1>
   </div>
 </section>
 
+<!-- ============ CHART ============ -->
 <section class="sec">
-  <div class="wrap" style="max-width:820px;">
-    <div class="notebox rv" style="margin-bottom:22px;">
-      <p style="color:var(--ivory); margin-bottom:14px;">In the unfortunate event of my passing, or an irrecoverable medical emergency that permanently prevents me from continuing coaching services, the following refund policy will apply:</p>
-      <ul>
-        <li>The <strong>currently active month</strong> (the month already started) will be non-refundable.</li>
-        <li><strong>All remaining unused months</strong> of the purchased program will be refunded in full.</li>
-        <li>Refunds will be processed after verification through the <strong>authorized family representative</strong> mentioned below.</li>
-      </ul>
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">The Rebuild, Drawn</p>
+      <h2>One line of discipline, drawn weekly.</h2>
     </div>
+    <figure class="chartbox rv" id="log-chart"></figure>
+  </div>
+</section>
 
-    <div class="card rv" style="margin-bottom:22px;">
-      <p class="eyebrow">Authorized Family Representative</p>
-      <div class="crow"><span class="k">Name</span><span>Hameed Ullah Khan</span></div>
-      <div class="crow"><span class="k">Relationship</span><span>Father</span></div>
-      <div class="crow"><span class="k">Contact</span><span>+92 305 6355050</span></div>
-      <div class="crow"><span class="k">Location</span><span>Punjab, Pakistan</span></div>
+<!-- ============ FULL LOG ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow">My Weekly Log</p>
+      <h2>The complete record</h2>
     </div>
+    <div class="tscroll rv" id="log-table"></div>
+  </div>
+</section>
 
-    <p class="lede rv">This policy applies only in cases of death or a medically confirmed irrecoverable emergency. <strong style="color:var(--ivory);">No refunds are applicable for any other reason.</strong></p>
+<!-- ============ CTA ============ -->
+<section class="sec">
+  <div class="wrap">
+    <div class="card rv" style="text-align:center; padding:44px 28px;">
+      <p class="eyebrow">Your Turn</p>
+      <h2 style="max-width:20ch; margin:0 auto .4em;">Your transformation can be logged too.</h2>
+      <p class="lede" style="margin:0 auto 22px;">The same patience, the same discipline, the same path — built around your body and your life.</p>
+      <a class="btn btn-solid" href="enroll.html">Start Your Transformation</a>
+    </div>
   </div>
 </section>
 
@@ -102,5 +113,6 @@
 
 <script src="main.js"></script>
 <script src="faqbot.js"></script>
+<script src="log.js"></script>
 </body>
 </html>
