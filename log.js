@@ -121,7 +121,7 @@ var DATA = [
       +'<text x="'+(X(n-1)-8).toFixed(1)+'" y="'+(Yw(last.w)-10).toFixed(1)+'" text-anchor="end" fill="#E6CD92" font-size="12" font-weight="600" font-family="Figtree,sans-serif">'+last.w+' kg</text>'
       +(lastBf?'<circle cx="'+X(lastBf[0]).toFixed(1)+'" cy="'+Yb(lastBf[1]).toFixed(1)+'" r="3.4" fill="#D7DEE9"/><text x="'+(X(lastBf[0])-8).toFixed(1)+'" y="'+(Yb(lastBf[1])+18).toFixed(1)+'" text-anchor="end" fill="#D7DEE9" font-size="12" font-weight="600" font-family="Figtree,sans-serif">'+lastBf[1]+'%</text>':'')
       +'</svg>'
-      +'<figcaption>Weeks 1–'+n+', measured every Wednesday since 1 June 2025. Left axis: weight (kg). Right axis: body fat (%).</figcaption>';
+      +'<figcaption>Weeks 1–'+n+', measured every week since 1 June 2025. Left axis: weight (kg). Right axis: body fat (%).</figcaption>';
     if(chartEl) chartEl.innerHTML=svg;
     if(tableEl){
       var h='<table class="logtable"><thead><tr><th>Week</th><th>Weight (kg)</th><th>Body fat</th><th>LBM (kg)</th><th>Note</th></tr></thead><tbody>';
